@@ -1,0 +1,79 @@
+<!--main-header-->
+<header data-main-header></header>
+
+<div class="dash-container">
+	<div class="dash-content clearfix">
+		<div class="dash-left l-left">
+			<aside>
+				<ul>
+					<li class="active"><a href="javascript:;" data-ng-click="go('/mobile')"><span class="mobile-active-icon"></span>Mobiles</a></li>
+					<li class="sites-nav">
+						<a href="javascript:;"><span class="sites-nav-icon"></span>Electorincs</a>
+						
+					</li>
+					<li class=""><a href="javascript:;"><span class="notifi-nav-icon"></span>Clothes</a></li>
+				</ul>
+			</aside>
+			
+		</div>
+		<!--dash-left end-->
+		<div class="dash-right l-left">
+			<div class="fluid-container mobile-container">
+				<div class="dash-right-head mobile-head">
+					<div class="row">
+						<div class="l-left mobile-head-title">
+							<p class="sites-title"><span class="mobile-md-icon"></span>Mobiles</p>
+						</div>
+					</div>
+					<!--row end-->
+				</div>
+				<!--dash-right-head end-->
+				
+				<!--mobile-->
+				<div id="mobile" class="fluid-container">
+					<div class="mobile-content">
+						<ul class="clearfix">
+							<li data-ng-repeat="siteData in mobileData.sites">
+								<div class="mobile-detail">
+									<div class="brand-store">
+									<img ng-src="i/{{siteData.url}}" class="width-18">
+										<span class="brand-md-icon"></span>
+										<p class="brand"><a href="javascript:;"> <span class="brand-num">{{siteData.name}}</span></a></p>
+										<p class="stores">{{siteData.prize}}</p>
+										<p class="address">{{siteData.deatils}}</p>
+										<p class="phone">{{siteData.camera}}</p>
+										<p class="web"><a href="javascript:;">{{siteData.battery}}</a></p>
+									</div>
+									<div class="site-notif">
+										<div class="notif">
+											<p><a href="javascript:;" data-ng-click="buyProducts()">Buy<span class="brand-arrow-icon"></span></a></p> 
+											</div>
+										</div>
+										<!--notif end-->
+									</div>
+									<!--site-notif end-->
+								</div>
+								<!--mobile-detail end-->
+							</li>
+						</ul>
+					</div>
+					<!--mobile-content end-->
+				</div>
+                
+                	<div id="mobile" class="fluid-container">
+					<div class="mobile-content">
+				<div class="row">
+						<div class="l-left mobile-head-title">
+							 <p ng-bind-html="buyHtml"></p>
+						</div>
+					</div>
+					</div>
+				<!--mobile end-->
+			</div>
+		</div>
+		<!--dash-right end-->
+	</div>
+	<!--dash-content end-->
+</div>
+<!--dash-container end-->
+

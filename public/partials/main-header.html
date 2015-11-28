@@ -1,0 +1,58 @@
+
+
+<div class="main-header-container" data-ng-controller="mainHeaderCtrl">
+	<!-- mainHead -->
+	<div class="main-header">
+		<div class="main-header-content clearfix">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-3">
+						<div class="building-dc">
+							<span class="logo-bg"><img src="i/barclayslogo.png" class="logo" alt="logo"></span>
+							<p>eMerchant</p>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9 align-right">
+						<nav>
+							<ul class="main-nav clearfix">
+
+								<li data-ng-class="{ active: isSet(1) }">
+									<a href="javascript:;" data-ng-click="setTab(1)"><span class="search-icon"></span>Search</a>
+									<div class="search-bg-overlay" data-ng-show="isSet(1)"></div>
+								</li>
+								<li data-ng-class="{ active: isSet(2) }"><a href="javascript:;" data-ng-click="setTab(2)"><span class="settings-icon"></span>Settings</a></li>
+								<li data-ng-class="{ active: isSet(3) }"><a href="javascript:;" data-ng-click="setTab(3)"><span class="help-icon"></span>Help</a></li>
+							</ul>
+						</nav>
+						<div class="user-info">
+							<a href="javascript:;"><span class="user-icon"></span><span>{{user.name.first}} {{user.name.last}}</span></a><a href="javascript:;" ng-click="logOut()"><span class="user-icon"></span><span>Logout</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- row end -->
+			</div>
+			<!-- container-fluid end -->
+
+			
+		</div>
+		<!-- main-header-content end -->
+	</div>
+	<!-- main-header end -->
+	<div class="search-menu-options clearfix" data-ng-show="isSet(1)">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 clearfix">
+				<ul class="search-options clearfix">
+					<li><a href="javascript:;" data-ng-class="{ active: global }" data-ng-click="searchOption()">Global</a></li>
+					<li><a href="javascript:;" data-ng-class="{ active: inSection }" data-ng-click="searchOption()">In this section</a></li>
+				</ul>
+				<div class="search-input">
+					<span class="search-icon"></span><input type="text" placeholder="Search">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 align-right">
+				<a href="javascript:;" class="close-search-icon" data-ng-click="setTab(0)"></a>
+			</div>
+		</div>
+	</div>
+</div>
+

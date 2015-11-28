@@ -1,0 +1,41 @@
+
+<div class="login-view" data-ng-controller="loginCtrl">
+	<div class="login-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 left-col">
+					<p><img src="i/barclayslogo.png" alt="logo"><span>eMerchant</span></p>
+				</div>
+				<div class="col-lg-9 col-md-9 right-col">
+					<div class="right-bg-img">
+						<div class="right-col-content">
+							<h4>Welcome to the eMerchant</h4>
+							<p>Please login:</p>
+							<form class="login-form">
+								<div class="row">
+									<label>Email</label><input type="email" name="email" ng-model="username" class="email-input" data-ng-class="invalidUsername ? 'error' : ''">
+								</div>
+								<div class="row password-input">
+									<label>Password</label><input type="password"  ng-model="password" name="password" class="pass-input" data-ng-class="invalidPass ? 'error' : ''">
+								</div>
+								
+							</form>
+							<div class="row">
+								<a href="javascript:;" class="login-btn" data-ng-click="validate()">Login<span class="login-icon"></span></a>
+							</div>
+						</div>
+						<!--right-col-content end-->
+
+						<img src="i/login-bt-logo.png" alt="bottom logo" class="login-bt-logo">
+					</div>
+					<!--right-bg-img end-->
+				</div>
+				<!--right-col end-->
+			</div>
+			<!--row end-->
+		</div>
+		<!--container-fluid end-->
+	</div>
+	<!--login-content end-->
+</div>
+<!--login-view end-->

@@ -1,0 +1,42 @@
+{
+    "name": "eMerchant",
+    "scripts": {
+     "start": "node server.js"
+     },
+    "description": "eMerchant: MongoDB, ExpressJS, AngularJS, NodeJS.",
+    "dependencies": {
+        "express": "*",
+        "cookie-parser": "*",
+        "body-parser": "*",
+        "static-favicon": "*",
+         "method-override": "*",
+          "compression": "*",
+          "morgan": "*",
+           "logger": "*",
+
+
+        "express-session":"*",
+        "forever": "*",
+      "mongoose-auto-increment" : "*",
+        "mongoose": "latest",
+        "mean-logger": "latest",
+        "connect-mongo": "latest",
+        "connect-flash": "latest",
+        "crypto": "latest",
+        "passport": "latest",
+        "passport-local": "latest",
+         "assert":"latest",
+          "ejs":"latest",
+        "underscore": "latest",
+        "async": "latest",
+        "view-helpers": "latest",
+        "forever": "latest",
+        "bower": "latest",
+        "socket.io": "latest",
+         "should": "latest",
+          "supertest": "latest"          ,
+          "underscore": "latest"
+
+    }
+
+}

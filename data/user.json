@@ -1,0 +1,27 @@
+[{
+	 "userName":"user1",
+	 "password":"123456",
+	 "email":"user1@user.com",
+	  "name":{"first":"User1","last":"User"},
+	  "mobile":"124567890",
+	 "address": {"street":"Cedar Road","street2":"","city":"South Euclid","state":"OH","zip":"44118"},
+	 "mergant_id":"12345678"
+ },
+ {
+	 "userName":"User2",
+	 "password":"123456",
+	 "email":"user2@user.com",
+	  "name":{"first":"User2","last":"User"},
+	  "mobile":"654879231",
+	 "address": {"street":"Acme Road","street2":"","city":"New York","state":"NY","zip":"123456"},
+	 "mergant_id":"45895262"
+ },
+ {
+	 "userName":"User3",
+	 "password":"123456",
+	 "email":"user3@user.com",
+	  "name":{"first":"User3","last":"User"},
+	  "mobile":"124567890",
+	 "address": {"street":"Cedar Road","street2":"","city":"South Euclid","state":"OH","zip":"44118"},
+	 "mergant_id":"79797798"
+ }]
