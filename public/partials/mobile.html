@@ -39,14 +39,14 @@
 									<img ng-src="i/{{siteData.url}}" class="width-18">
 										<span class="brand-md-icon"></span>
 										<p class="brand"><a href="javascript:;"> <span class="brand-num">{{siteData.name}}</span></a></p>
-										<p class="stores">{{siteData.prize}}</p>
+										<p class="stores">$ {{siteData.prize}}</p>
 										<p class="address">{{siteData.deatils}}</p>
 										<p class="phone">{{siteData.camera}}</p>
 										<p class="web"><a href="javascript:;">{{siteData.battery}}</a></p>
 									</div>
 									<div class="site-notif">
 										<div class="notif">
-											<p><a href="javascript:;" data-ng-click="buyProducts()">Buy<span class="brand-arrow-icon"></span></a></p> 
+											<p><a href="javascript:;" data-ng-click="buyProducts(siteData.prize)">Buy<span class="brand-arrow-icon"></span></a></p> 
 											</div>
 										</div>
 										<!--notif end-->

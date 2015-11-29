@@ -117,10 +117,10 @@ var ngcControllers = angular.module('ngcControllers', [])
 
    
     $scope.buyProducts = function(prize){
-     var data = {prize:1000}
+     var data = {prize:prize}
             dataSvc.postQuery('buyProducts',data).then(function (response) {
                // $scope.mobileData = response;
-             $scope.buyHtml = response.html
+             $scope.buyHtml = $sce.trustAsHtml(response.html);
             }, function (error) {
                 console.log(error);
             });  

@@ -49,7 +49,7 @@ exports.buyProducts = function(req, res) {
   var optionsget = {
     host : config.ServerUrl,
     port : config.ServerPort,
-    path : '/triggerPayment?payAgg_MID='+config.MergantId+'&amount=100&userId='+req.user.mobile, // url with parameters
+    path : '/triggerPayment?payAgg_MID='+config.MergantId+'&amount='+req.body.prize+'&userId='+req.user.mobile, // url with parameters
     method : 'GET', // GET Method
     contentType : 'application/json'
 };
